@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Contact list";
+}
+
+<div class="text-center">
+    <h1 class="display-4 text-primary">Contact list</h1>
+</div>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone number</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody class="align-middle">
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark Grayson</td>
+            <td>Invincible@email.com</td>
+            <td>11 96524-2218</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Contact" asp-action="Edit">Edit</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contact" asp-action="Delete">Delete</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob Thornton</td>
+            <td>Jacob@email.com</td>
+            <td>11 96524-2218</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Contact" asp-action="Edit">Edit</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contact" asp-action="Delete">Delete</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry the Bird</td>
+            <td>LarryBird@email.com</td>
+            <td>11 96524-2218</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Contact" asp-action="Edit">Edit</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contact" asp-action="Delete">Delete</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br />
+
+<div class="text-center">
+    <a role="button" class="btn btn-success" asp-controller="Contact" asp-action="Create">Add contact</a>
+</div>
